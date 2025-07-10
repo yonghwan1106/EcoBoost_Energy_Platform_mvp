@@ -11,7 +11,7 @@ import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
 export default function ReportPage() {
-  const [reportData, setReportData] = useState<any>(null);
+  const [, setReportData] = useState<Record<string, unknown> | null>(null);
   const [loading, setLoading] = useState(true);
   const [generatingPdf, setGeneratingPdf] = useState(false);
 
@@ -79,7 +79,7 @@ export default function ReportPage() {
     }
   };
 
-  const COLORS = ['#10b981', '#3b82f6', '#f59e0b', '#ef4444'];
+  // const COLORS = ['#10b981', '#3b82f6', '#f59e0b', '#ef4444'];
 
   const monthlyData = [
     { month: '1월', electricity: 1500, gas: 300, cost: 450000 },
@@ -230,7 +230,7 @@ export default function ReportPage() {
                 </ResponsiveContainer>
               </div>
               <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-                {industryComparisonData.map((item: any, index: number) => (
+                {industryComparisonData.map((item: Record<string, unknown>, index: number) => (
                   <div key={index} className="text-center p-3 bg-gray-50 rounded-lg">
                     <div className="text-lg font-semibold">{item.industry}</div>
                     <div className="text-2xl font-bold text-green-600">{item.efficiency}%</div>
@@ -261,7 +261,7 @@ export default function ReportPage() {
                         dataKey="value"
                         label={({name, value}) => `${name}: ${value}%`}
                       >
-                        {renewableDistribution.map((entry: any, index: number) => (
+                        {renewableDistribution.map((entry: Record<string, unknown>, index: number) => (
                           <Cell key={`cell-${index}`} fill={entry.color} />
                         ))}
                       </Pie>

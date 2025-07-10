@@ -62,6 +62,12 @@ export default function Navbar() {
                 지원사업
               </Link>
               <Link
+                href="/renewable-forecast"
+                className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                발전량 예측
+              </Link>
+              <Link
                 href="/report"
                 className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
               >
@@ -131,6 +137,13 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 지원사업
+              </Link>
+              <Link
+                href="/renewable-forecast"
+                className="text-gray-600 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                발전량 예측
               </Link>
               <Link
                 href="/report"

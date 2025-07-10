@@ -3,7 +3,6 @@ import {
   matchSupportPrograms,
   filterProgramsByCategory,
   filterProgramsByEligibility,
-  filterProgramsBySupportType,
   allSupportPrograms,
   CompanyProfile 
 } from '@/data/government-support';

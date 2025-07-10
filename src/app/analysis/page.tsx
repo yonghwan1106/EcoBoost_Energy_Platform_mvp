@@ -18,8 +18,8 @@ export default function AnalysisPage() {
   });
 
   const [analysisResult, setAnalysisResult] = useState<{
-    currentUsage?: any;
-    benchmark?: any;
+    currentUsage?: Record<string, unknown>;
+    benchmark?: Record<string, unknown>;
     savingPotential?: number;
     co2ReductionPotential?: number;
     recommendations?: string[];

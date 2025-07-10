@@ -1,14 +1,14 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { 
   Building2, Award, Calendar, DollarSign, CheckCircle, AlertCircle, 
-  ExternalLink, Phone, Mail, Globe, TrendingUp, Users, Target
+  Phone, Mail, Globe, TrendingUp, Target
 } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 interface CompanyProfile {
   name: string;
@@ -476,7 +476,7 @@ export default function GovernmentSupportEngine() {
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
-                {result.recommendations.topMatches.map((match, index) => (
+                {result.recommendations.topMatches.map((match) => (
                   <Card key={match.program.id} className="cursor-pointer hover:shadow-md transition-shadow"
                         onClick={() => setSelectedProgram(match)}>
                     <CardContent className="pt-4">

@@ -218,7 +218,7 @@ export default function PotentialPage() {
                               dataKey="value"
                               label={({name, value}) => `${name}: ${value}kW`}
                             >
-                              {pieData.map((entry: any, index: number) => (
+                              {pieData.map((entry: Record<string, unknown>, index: number) => (
                                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                               ))}
                             </Pie>

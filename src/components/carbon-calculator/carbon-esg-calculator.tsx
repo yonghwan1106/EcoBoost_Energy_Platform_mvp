@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Leaf, Award, TrendingUp, Target, AlertTriangle, CheckCircle } from 'lucide-react';
 import { 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
+  XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
   PieChart, Pie, Cell, LineChart, Line, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar
 } from 'recharts';
 
@@ -150,7 +150,7 @@ export default function CarbonESGCalculator() {
 
   // 탄소 배출원별 차트 데이터
   const emissionSourceData = result ? Object.entries(result.carbonEmission.emissionBySource)
-    .filter(([_, value]) => value !== undefined && value > 0)
+    .filter(([, value]) => value !== undefined && value > 0)
     .map(([source, value]) => ({
       name: source === 'electricity' ? '전력' : 
             source === 'naturalGas' ? '천연가스' :
