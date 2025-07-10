@@ -68,6 +68,12 @@ export default function Navbar() {
                 발전량 예측
               </Link>
               <Link
+                href="/building-efficiency"
+                className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                건물 효율등급
+              </Link>
+              <Link
                 href="/report"
                 className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
               >
@@ -150,6 +156,13 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 발전량 예측
+              </Link>
+              <Link
+                href="/building-efficiency"
+                className="text-gray-600 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                건물 효율등급
               </Link>
               <Link
                 href="/report"
