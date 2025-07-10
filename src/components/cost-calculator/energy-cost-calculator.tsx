@@ -4,8 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Calculator, Zap, TrendingDown, DollarSign, ArrowLeft } from 'lucide-react';
-import Link from 'next/link';
+import { Calculator, Zap, TrendingDown, DollarSign } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 interface ElectricityRate {
@@ -119,25 +118,6 @@ export default function EnergyCostCalculator() {
 
   return (
     <div className="max-w-7xl mx-auto p-6 space-y-8">
-      {/* 네비게이션 섹션 */}
-      <div className="flex items-center justify-between mb-6">
-        <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-green-600 transition-colors">
-          <ArrowLeft className="h-4 w-4" />
-          메인으로 돌아가기
-        </Link>
-        <div className="flex items-center gap-4">
-          <Link href="/esg-calculator" className="text-sm text-gray-600 hover:text-green-600 transition-colors">
-            ESG 평가
-          </Link>
-          <Link href="/support-programs" className="text-sm text-gray-600 hover:text-green-600 transition-colors">
-            지원사업
-          </Link>
-          <Link href="/renewable-forecast" className="text-sm text-gray-600 hover:text-green-600 transition-colors">
-            발전량 예측
-          </Link>
-        </div>
-      </div>
-
       {/* 제목 섹션 */}
       <div className="text-center">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">

@@ -1,9 +1,13 @@
 import RenewableEnergyForecast from '@/components/renewable-forecast/renewable-energy-forecast';
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 export default function RenewableForecastPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <Navbar />
       <RenewableEnergyForecast />
+      <Footer />
     </div>
   );
 }
