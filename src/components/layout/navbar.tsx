@@ -44,6 +44,12 @@ export default function Navbar() {
                 신재생에너지
               </Link>
               <Link
+                href="/cost-calculator"
+                className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                비용 계산기
+              </Link>
+              <Link
                 href="/report"
                 className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
               >
@@ -92,6 +98,13 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 신재생에너지
+              </Link>
+              <Link
+                href="/cost-calculator"
+                className="text-gray-600 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                비용 계산기
               </Link>
               <Link
                 href="/report"
