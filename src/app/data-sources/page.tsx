@@ -30,7 +30,6 @@ interface DataSource {
 }
 
 export default function DataSourcesPage() {
-  const [, setDataSources] = useState<DataSource[]>([]);
   const [loading, setLoading] = useState(true);
 
   const mockDataSources: DataSource[] = [
@@ -139,19 +138,30 @@ export default function DataSourcesPage() {
   ];
 
   useEffect(() => {
+    let isMounted = true;
+    
     const fetchDataSources = async () => {
       try {
         // 실제 환경에서는 API에서 데이터를 가져올 것
-        setDataSources(mockDataSources);
+        await new Promise(resolve => setTimeout(resolve, 100)); // 짧은 딜레이 시뮬레이션
+        
+        if (isMounted) {
+          setLoading(false);
+        }
       } catch (error) {
         console.error('데이터 소스 로딩 실패:', error);
-      } finally {
-        setLoading(false);
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     };
     
     fetchDataSources();
-  }, [mockDataSources]);
+    
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   // 카테고리별 통계
   const categoryStats = mockDataSources.reduce((acc, source) => {
