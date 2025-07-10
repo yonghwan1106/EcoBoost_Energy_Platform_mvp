@@ -50,6 +50,12 @@ export default function Navbar() {
                 비용 계산기
               </Link>
               <Link
+                href="/esg-calculator"
+                className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                ESG 평가
+              </Link>
+              <Link
                 href="/report"
                 className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
               >
@@ -105,6 +111,13 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 비용 계산기
+              </Link>
+              <Link
+                href="/esg-calculator"
+                className="text-gray-600 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                ESG 평가
               </Link>
               <Link
                 href="/report"
