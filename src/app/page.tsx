@@ -24,7 +24,7 @@ export default function Home() {
               <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
                 <Link href="/analysis">에너지 분석 시작하기</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
+              <Button size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white hover:text-green-600">
                 <Link href="/potential">신재생에너지 잠재력 확인</Link>
               </Button>
             </div>
