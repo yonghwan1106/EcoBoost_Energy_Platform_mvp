@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
-import { BarChart3, TrendingUp, Zap, Leaf } from "lucide-react";
+import { BarChart3, TrendingUp, Zap, Leaf, Award } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -14,9 +14,13 @@ export default function Home() {
       <section className="bg-gradient-to-r from-green-600 to-green-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
-            <p className="text-sm md:text-base text-green-100 mb-4 font-medium">
-              산업통상자원부 공공데이터 활용 아이디어 공모전 출품작
-            </p>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
+              <Award className="h-4 w-4 text-yellow-300" />
+              <span className="text-sm md:text-base text-white font-semibold">
+                산업통상자원부 공공데이터 활용 아이디어 공모전 출품작
+              </span>
+              <Award className="h-4 w-4 text-yellow-300" />
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               에너지 효율화의 새로운 시작
             </h1>
