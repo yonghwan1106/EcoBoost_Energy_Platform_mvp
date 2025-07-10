@@ -73,6 +73,12 @@ export default function Navbar() {
               >
                 보고서
               </Link>
+              <Link
+                href="/data-sources"
+                className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                공공데이터
+              </Link>
             </div>
           </div>
 
@@ -151,6 +157,13 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 보고서
+              </Link>
+              <Link
+                href="/data-sources"
+                className="text-gray-600 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                공공데이터
               </Link>
             </div>
           </div>

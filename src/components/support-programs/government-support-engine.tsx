@@ -6,8 +6,9 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { 
   Building2, Award, Calendar, DollarSign, CheckCircle, AlertCircle, 
-  Phone, Mail, Globe, TrendingUp, Target
+  Phone, Mail, Globe, TrendingUp, Target, ArrowLeft
 } from 'lucide-react';
+import Link from 'next/link';
 import { Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 interface CompanyProfile {
@@ -204,6 +205,25 @@ export default function GovernmentSupportEngine() {
 
   return (
     <div className="max-w-7xl mx-auto p-6 space-y-8">
+      {/* 네비게이션 섹션 */}
+      <div className="flex items-center justify-between mb-6">
+        <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-green-600 transition-colors">
+          <ArrowLeft className="h-4 w-4" />
+          메인으로 돌아가기
+        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/cost-calculator" className="text-sm text-gray-600 hover:text-green-600 transition-colors">
+            비용 계산기
+          </Link>
+          <Link href="/esg-calculator" className="text-sm text-gray-600 hover:text-green-600 transition-colors">
+            ESG 평가
+          </Link>
+          <Link href="/renewable-forecast" className="text-sm text-gray-600 hover:text-green-600 transition-colors">
+            발전량 예측
+          </Link>
+        </div>
+      </div>
+
       {/* 제목 섹션 */}
       <div className="text-center">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">
