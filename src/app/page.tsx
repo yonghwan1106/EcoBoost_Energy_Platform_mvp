@@ -14,6 +14,9 @@ export default function Home() {
       <section className="bg-gradient-to-r from-green-600 to-green-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
+            <p className="text-sm md:text-base text-green-100 mb-4 font-medium">
+              산업통상자원부 공공데이터 활용 아이디어 공모전 출품작
+            </p>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               에너지 효율화의 새로운 시작
             </h1>
