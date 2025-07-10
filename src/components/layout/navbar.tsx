@@ -56,6 +56,12 @@ export default function Navbar() {
                 ESG 평가
               </Link>
               <Link
+                href="/support-programs"
+                className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                지원사업
+              </Link>
+              <Link
                 href="/report"
                 className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium"
               >
@@ -118,6 +124,13 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 ESG 평가
+              </Link>
+              <Link
+                href="/support-programs"
+                className="text-gray-600 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                지원사업
               </Link>
               <Link
                 href="/report"
