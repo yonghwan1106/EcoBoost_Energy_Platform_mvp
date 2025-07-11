@@ -48,7 +48,7 @@ export default function DataSourcesPage() {
       format: ["JSON", "XML"],
       status: "active",
       reliability: 99.2,
-      documentationUrl: "https://www.data.go.kr/iim/api/selectAPIAcountView.do?id=T15012711"
+      documentationUrl: "https://www.data.go.kr/data/15104442/fileData.do"
     },
     {
       id: "kma-weather",
@@ -65,7 +65,7 @@ export default function DataSourcesPage() {
       format: ["JSON", "CSV"],
       status: "active",
       reliability: 98.7,
-      documentationUrl: "https://www.data.go.kr/iim/api/selectAPIAcountView.do?id=1360000"
+      documentationUrl: "https://www.data.go.kr/data/15057084/openapi.do"
     },
     {
       id: "keco-emissions",
@@ -82,7 +82,7 @@ export default function DataSourcesPage() {
       format: ["JSON", "Excel"],
       status: "active",
       reliability: 99.5,
-      documentationUrl: "https://www.data.go.kr/iim/api/selectAPIAcountView.do?id=15000581"
+      documentationUrl: "https://www.gir.go.kr/home/index.do?menuId=18"
     },
     {
       id: "smba-support",
@@ -99,7 +99,7 @@ export default function DataSourcesPage() {
       format: ["JSON", "XML"],
       status: "active",
       reliability: 97.8,
-      documentationUrl: "https://www.data.go.kr/iim/api/selectAPIAcountView.do?id=15001259"
+      documentationUrl: "https://www.data.go.kr/data/3034791/fileData.do"
     },
     {
       id: "energy-statistics",
@@ -116,7 +116,7 @@ export default function DataSourcesPage() {
       format: ["JSON", "CSV"],
       status: "active",
       reliability: 98.9,
-      documentationUrl: "https://www.data.go.kr/iim/api/selectAPIAcountView.do?id=15000123"
+      documentationUrl: "https://www.data.go.kr/data/15020863/fileData.do"
     },
     {
       id: "renewable-capacity",
@@ -133,7 +133,7 @@ export default function DataSourcesPage() {
       format: ["JSON"],
       status: "beta",
       reliability: 96.5,
-      documentationUrl: "https://www.data.go.kr/iim/api/selectAPIAcountView.do?id=15000789"
+      documentationUrl: "https://www.data.go.kr/data/15014669/fileData.do"
     }
   ];
 
